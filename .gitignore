@@ -4,3 +4,4 @@ package-lock.json
 .stylelintrc.json
 hint-report
 .eslintrc.json
+sass/
