@@ -11,6 +11,7 @@
 
 body {
   width: fit-content;
+  background-image: url("../src/background2.png");
 }
 
 /* Mobile version of the header. */
@@ -20,7 +21,7 @@ body {
 }
 
 .menu-button img {
-  width: 45px;
+  width: 40px;
   margin: 15px 0 10px 25px;
 }
 
@@ -28,7 +29,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 15px 80px 15px;
-  background-image: url("../src/background2.png");
 }
 
 .header #hello {
