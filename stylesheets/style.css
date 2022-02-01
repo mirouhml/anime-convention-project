@@ -140,6 +140,7 @@ a {
   .menu-button {
     display: none;
   }
+
   .header-tab {
     display: flex;
     padding: 0 150px 0 150px;
@@ -148,54 +149,66 @@ a {
     background-color: #f7f7f7;
     width: 100%;
   }
+
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
+
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
+
   .logo img {
     max-width: 92px;
   }
+
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 30px;
   }
+
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
   }
+
   .desktop-menu h4:hover {
     color: #ec5242;
   }
+
   .header {
     padding: 100px 0 80px 200px;
     width: 80%;
   }
+
   .header #hello {
     font-size: 45px;
     margin: 0;
   }
+
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
   }
+
   .header p {
     font-size: 15px;
     padding: 20px;
     width: 70%;
   }
+
   .header #date {
     font-size: 35px;
     margin: 15px 0 0 0;
   }
+
   .header #location {
     font-size: 25px;
     margin: 0 0 30px 0;
@@ -286,13 +299,16 @@ a {
   .events {
     width: fit-content;
   }
+
   .events h3 {
     text-align: center;
   }
+
   .events p {
     text-align: center;
     width: 90%;
   }
+
   .events ul {
     flex-direction: row;
     justify-content: center;
@@ -300,6 +316,7 @@ a {
     gap: 5px;
     flex-wrap: wrap;
   }
+
   .events li {
     width: 13%;
     display: flex;
@@ -308,12 +325,15 @@ a {
     min-width: 190px;
     min-height: 297px;
   }
+
   .events img {
     width: 40%;
   }
+
   .events button {
     display: none;
   }
+
   .events a {
     display: block;
     color: #d3d3d3;
@@ -426,12 +446,15 @@ a {
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
   }
+
   .guests li {
     min-width: 360px;
   }
+
   .guests button {
     width: 30%;
   }
+
   .guest-image {
     background-image: url(../src/chess.png);
   }
