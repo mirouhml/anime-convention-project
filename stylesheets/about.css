@@ -136,7 +136,6 @@ a {
   .menu-button {
     display: none;
   }
-
   .header-tab {
     display: flex;
     padding: 0 150px 0 150px;
@@ -145,46 +144,41 @@ a {
     background-color: #f7f7f7;
     width: 100%;
   }
-
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
-
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
-
+  .logo img {
+    max-width: 92px;
+  }
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 60px;
   }
-
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
   }
-
   .desktop-menu h4:hover {
     color: #ec5242;
   }
-
   .header #hello {
     display: none;
   }
-
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
     width: 60%;
   }
-
   .header p {
     font-size: 15px;
     padding: 20px;
@@ -322,4 +316,8 @@ a {
   font-size: 15px;
   margin: 30px 0 30px 0;
   gap: 30px;
+}
+
+.copyright img {
+  max-width: 92px;
 }
