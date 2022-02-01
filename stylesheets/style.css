@@ -400,6 +400,8 @@ a {
   object-fit: cover;
   padding-left: 12%;
   padding-top: 12%;
+  min-width: 132px;
+  min-height: 132.61px;
 }
 
 .guest-info {

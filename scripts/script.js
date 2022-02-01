@@ -1,51 +1,51 @@
 const guests = {
   guest1: {
-    name: 'Shingo Adashi',
+    name: 'Shingo Adachi',
     occupation: 'Animation director and character designer',
     description: 'Chief animation director and character designer for the popular anime series Sword Art Online and Working.',
-    picture: 'src/hunter.jpg',
+    picture: 'src/adachi.png',
   },
   guest2: {
     name: 'Naoshi Komi',
     occupation: 'Manga creator',
-    description: 'creator of the big hit rom-com manga Nisekoi.',
-    picture: 'src/hunter.jpg',
+    description: 'Japenese manga artist who has debuted in Weekly Shōnen Jump magazine with one of the big hits rom-com manga Nisekoi.',
+    picture: 'src/naoshi.png',
   },
   guest3: {
     name: 'Taiki Konno',
     occupation: 'Animator and animation director',
     description: 'Was part of the animation teams of many big hit series such as the monogatari series .',
-    picture: 'src/hunter.jpg',
+    picture: 'src/taiki.png',
   },
   guest4: {
     name: 'Toshiya Shinohara',
     occupation: 'Anime director',
     description: 'Directed many successful series such as Black butler and Nagi no Asu Kara as well as the InuYasha movies.',
-    picture: 'src/hunter.jpg',
+    picture: 'src/toshiya.png',
   },
   guest5: {
     name: 'Kevin Penkin',
     occupation: 'Music composer',
     description: 'Composed the soundtracks of the critically acclaimed series Made in Abyss, The Rising of the Shield Hero and Tower of God.',
-    picture: 'src/hunter.jpg',
+    picture: 'src/kevin.png',
   },
   guest6: {
     name: 'Masaaki Yuasa',
     occupation: 'Anime director',
     description: 'Directed the critically acclaimed series Devilman Crybaby and Keep Your Hands off Eizouken.',
-    picture: 'src/hunter.jpg',
+    picture: 'src/masaaki.png',
   },
   guest7: {
     name: 'Christopher Sabat',
     occupation: 'Voice actor',
     description: 'One of the leading figures in the dubbing industry, worked on many hot series such as My Hero Academia as All might, and Dragonball as Vegeta.',
-    picture: 'src/hunter.jpg',
+    picture: 'src/christopher.png',
   },
   guest8: {
     name: 'Ichiro Hashiba',
     occupation: 'CEO of Bookwalker',
     description: 'CEO of the leading publisher for translated manga and light novel series Bookwalker, one of the first japan based publishers with global coverage.',
-    picture: 'src/hunter.jpg',
+    picture: 'src/ichiro.png',
   },
 };
 
@@ -88,6 +88,7 @@ button.addEventListener('click', () => {
   } else {
     createGuestSection(list, 2);
     clicks = true;
+    document.getElementById('guests-id').scrollIntoView({ behavior: 'smooth' });
     button.innerHTML = `MORE
                             <img src="src/down-arrow.png">`;
   }
