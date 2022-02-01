@@ -2,9 +2,9 @@
 
 # Portfolio
 
-> This is a website for an anime convention.
+> This is a website about an event called Creative Anime Convention contains: events, guests and sponsors.
 
-![screenshot](./src/desktop-screenshot.png)
+![screenshot](./src/screenshot.png)
 
 ## Live Demo
 
@@ -16,6 +16,7 @@
 - CSS
 - Javascript
 - VSCode
+- Linters
 
 ## Authors
 
