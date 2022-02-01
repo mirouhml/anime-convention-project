@@ -84,6 +84,7 @@ button {
   .menu-button {
     display: none;
   }
+
   .header-tab {
     display: flex;
     padding: 0 150px 0 150px;
@@ -92,51 +93,62 @@ button {
     background-color: #f7f7f7;
     width: 100%;
   }
+
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
+
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
+
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 60px;
   }
+
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
   }
+
   .desktop-menu h4:hover {
     color: #ec5242;
   }
+
   .header {
     padding: 100px 0 80px 200px;
     width: 80%;
   }
+
   .header #hello {
     font-size: 45px;
     margin: 0;
   }
+
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
   }
+
   .header p {
     font-size: 15px;
     padding: 20px;
     width: 70%;
   }
+
   .header #date {
     font-size: 35px;
     margin: 15px 0 0 0;
   }
+
   .header #location {
     font-size: 25px;
     margin: 0 0 30px 0;
@@ -221,16 +233,20 @@ button {
   .events {
     width: fit-content;
   }
+
   .events hr {
     width: 30px;
   }
+
   .events h3 {
     text-align: center;
   }
+
   .events p {
     text-align: center;
     width: 90%;
   }
+
   .events ul {
     list-style-type: none;
     width: 100%;
@@ -242,6 +258,7 @@ button {
     gap: 5px;
     flex-wrap: wrap;
   }
+
   .events li {
     background-color: #3c3f46;
     width: 13%;
@@ -253,9 +270,11 @@ button {
     align-items: center;
     min-width: 190px;
   }
+
   .events button {
     display: none;
   }
+
   .events a {
     display: block;
     color: #d3d3d3;
