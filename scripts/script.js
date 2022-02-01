@@ -64,12 +64,30 @@ function createGuest(guest) {
     guestContainer.appendChild(guestElement);
 }   
 
-function createGuestSection(guestsList){
-    for (let i = 0; i < guestsList.length; i += 1) {
+function createGuestSection(guestsList,counter){
+    const guestContainer = document.getElementById('guest-container');
+    guestContainer.innerHTML = '';
+    for (let i = 0; i < counter; i += 1) {
         createGuest(guestsList[i]);
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    createGuestSection(Object.values(guests));
-  });
+    createGuestSection(Object.values(guests),2);
+});
+
+let clicks = true;
+const button = document.getElementById('more-button');
+button.addEventListener('click', () => {
+    const list = Object.values(guests);
+    if (clicks){
+        createGuestSection(list,list.length);
+        clicks = false;
+        button.innerHTML = 'LESS';
+    }
+    else {
+        createGuestSection(list,2);
+        clicks = true;
+        button.innerHTML = 'MORE';
+    }
+});
