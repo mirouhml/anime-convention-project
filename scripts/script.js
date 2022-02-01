@@ -1,58 +1,58 @@
 const guests = {
-    guest1: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest2: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest3: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest4: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest5: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest6: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest7: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-    guest8: {
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-        picture: 'src/hunter.jpg'
-    },
-}
+  guest1: {
+    name: 'Shingo Adashi',
+    occupation: 'Animation director and character designer',
+    description: 'Chief animation director and character designer for the popular anime series Sword Art Online and Working.',
+    picture: 'src/hunter.jpg',
+  },
+  guest2: {
+    name: 'Naoshi Komi',
+    occupation: 'Manga creator',
+    description: 'creator of the big hit rom-com manga Nisekoi.',
+    picture: 'src/hunter.jpg',
+  },
+  guest3: {
+    name: 'Taiki Konno',
+    occupation: 'Animator and animation director',
+    description: 'Was part of the animation teams of many big hit series such as the monogatari series .',
+    picture: 'src/hunter.jpg',
+  },
+  guest4: {
+    name: 'Toshiya Shinohara',
+    occupation: 'Anime director',
+    description: 'Directed many successful series such as Black butler and Nagi no Asu Kara as well as the InuYasha movies.',
+    picture: 'src/hunter.jpg',
+  },
+  guest5: {
+    name: 'Kevin Penkin',
+    occupation: 'Music composer',
+    description: 'Composed the soundtracks of the critically acclaimed series Made in Abyss, The Rising of the Shield Hero and Tower of God.',
+    picture: 'src/hunter.jpg',
+  },
+  guest6: {
+    name: 'Masaaki Yuasa',
+    occupation: 'Anime director',
+    description: 'Directed the critically acclaimed series Devilman Crybaby and Keep Your Hands off Eizouken.',
+    picture: 'src/hunter.jpg',
+  },
+  guest7: {
+    name: 'Christopher Sabat',
+    occupation: 'Voice actor',
+    description: 'One of the leading figures in the dubbing industry, worked on many hot series such as My Hero Academia as All might, and Dragonball as Vegeta.',
+    picture: 'src/hunter.jpg',
+  },
+  guest8: {
+    name: 'Ichiro Hashiba',
+    occupation: 'CEO of Bookwalker',
+    description: 'CEO of the leading publisher for translated manga and light novel series Bookwalker, one of the first japan based publishers with global coverage.',
+    picture: 'src/hunter.jpg',
+  },
+};
 
 function createGuest(guest) {
-    const guestContainer = document.getElementById('guest-container');
-    const guestElement = document.createElement('li');
-    guestElement.innerHTML =   `<div class="guest-image">
+  const guestContainer = document.getElementById('guest-container');
+  const guestElement = document.createElement('li');
+  guestElement.innerHTML = `<div class="guest-image">
                                     <img src="${guest.picture}" alt="Guest picture">
                                 </div>
                                 <div class="guest-info">
@@ -61,54 +61,53 @@ function createGuest(guest) {
                                     <hr>
                                     <p>${guest.description}</p>
                                 </div>`;
-    guestContainer.appendChild(guestElement);
-}   
+  guestContainer.appendChild(guestElement);
+}
 
-function createGuestSection(guestsList,counter){
-    const guestContainer = document.getElementById('guest-container');
-    guestContainer.innerHTML = '';
-    for (let i = 0; i < counter; i += 1) {
-        createGuest(guestsList[i]);
-    }
+function createGuestSection(guestsList, counter) {
+  const guestContainer = document.getElementById('guest-container');
+  guestContainer.innerHTML = '';
+  for (let i = 0; i < counter; i += 1) {
+    createGuest(guestsList[i]);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    createGuestSection(Object.values(guests),2);
+  createGuestSection(Object.values(guests), 2);
 });
 
 let clicks = true;
 const button = document.getElementById('more-button');
 button.addEventListener('click', () => {
-    const list = Object.values(guests);
-    if (clicks){
-        createGuestSection(list,list.length);
-        clicks = false;
-        button.innerHTML = `LESS
+  const list = Object.values(guests);
+  if (clicks) {
+    createGuestSection(list, list.length);
+    clicks = false;
+    button.innerHTML = `LESS
                             <img src="src/up-arrow.png">`;
-    }
-    else {
-        createGuestSection(list,2);
-        clicks = true;
-        button.innerHTML = `MORE
+  } else {
+    createGuestSection(list, 2);
+    clicks = true;
+    button.innerHTML = `MORE
                             <img src="src/down-arrow.png">`;
-    }
+  }
 });
 
 function openCloseMenu() {
-    const x = document.querySelector('.mobile-menu');
-    const y = document.querySelector('body');
-    if (x.style.display === 'flex') {
-      x.style.display = 'none';
-      y.style.overflow = 'scroll';
-    } else {
-      x.style.display = 'flex';
-      y.style.overflow = 'hidden';
-    }
+  const x = document.querySelector('.mobile-menu');
+  const y = document.querySelector('body');
+  if (x.style.display === 'flex') {
+    x.style.display = 'none';
+    y.style.overflow = 'scroll';
+  } else {
+    x.style.display = 'flex';
+    y.style.overflow = 'hidden';
   }
-  function addevent(id) {
-    document.getElementById(id).addEventListener('click', () => {
-      openCloseMenu();
-    });
-  }
-  const ids = ['onclick-open', 'onclick-close', 'onclick-events', 'onclick-about', 'onclick-guests', 'onclick-sponsors'];
-  ids.forEach(addevent);
+}
+function addevent(id) {
+  document.getElementById(id).addEventListener('click', () => {
+    openCloseMenu();
+  });
+}
+const ids = ['onclick-open', 'onclick-close', 'onclick-events', 'onclick-about', 'onclick-guests', 'onclick-sponsors'];
+ids.forEach(addevent);
