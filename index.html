@@ -16,7 +16,7 @@
             <img src="" alt="Website logo">
         </a>
         <div class="menu-button" >
-            <a id="onclick-open" href="javascript:void(0);">
+            <a id="onclick-open">
                 <img src="src/menu-icon.svg" alt="Menu icon"/>
             </a>
         </div>
@@ -29,26 +29,65 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#events-id">
                     <h4>
                         Events
                     </h4>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#guests-id">
                     <h4>
                         Guests
                     </h4>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#sponsors">
                     <h4 class="menu-last-item">
                         Sponsors
                     </h4>
                 </a>
             </li>
+        </ul>
+        <ul class="mobile-menu">
+            <li>
+                <a id="onclick-close">
+                    <img id="close-button" src="src/close-icon.png" alt="Close button">
+                </a>
+            </li>
+            <li>
+                <a href="" id="onclick-about">
+                    <h4>
+                        About
+                    </h4>
+                </a>
+                <hr>
+            </li>
+            <li>
+                <a href="#events-id" id="onclick-events">
+                    <h4>
+                        Events
+                    </h4>
+                </a>
+                <hr>
+            </li>
+            <li>
+                <a href="#guests-id" id="onclick-guests">
+                    <h4>
+                        Guests
+                    </h4>
+                </a>
+                <hr>
+            </li>
+            <li>
+                <a href="#sponsors" id="onclick-sponsors">
+                    <h4 class="menu-last-item">
+                        Sponsors
+                    </h4>
+                </a>
+                <hr>
+            </li>  
         </ul>
     </header>
     <section class="header" id="header-id">
@@ -99,6 +138,22 @@
             MORE
             <img src="src/down-arrow.png">
         </button>
+    </section>
+    <section class="sponsors" id="sponsors-id">
+        <h2>Sponsors</h2>
+        <hr>
+        <ul>
+            <li>Ministry of Culture and Arts</li>
+            <li>Kadokawa</li>
+            <li>Kodansha</li>
+            <li>KLab</li>
+            <li>Bandai Namco</li>
+            <li>Viz Media</li>
+        </ul>
+    </section>
+    <section class="copyright">
+        <img src="src/main-bg.png" alt="Website logo">
+        <p>© 2022 -INSERT NAME- All Rights Reserved.</p>
     </section>
     <script src="scripts/script.js"></script>
 </body>

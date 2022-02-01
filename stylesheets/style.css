@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +22,51 @@ button {
 }
 
 /* Mobile version of the header. */
+.header-tab {
+  display: flex;
+  justify-content: start;
+  box-shadow: 0 3px 10px 0 #4b4b4b73;
+  position: fixed;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-image: url("../src/mobile-bg.png");
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mobile-menu a {
+  color: #272a31;
+  font-size: 32px;
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mobile-menu h4 {
+  margin: 0 108px 15px 40px;
+}
+
+.mobile-menu hr {
+  margin: 0 24px 24px 24px;
+  border: none;
+  border-top: 2px solid #ec5242;
+}
+
+#close-button {
+  width: 10%;
+  margin: 18px 38px 34px auto;
+  float: right;
+}
+
 .logo,
 .desktop-menu {
   display: none;
@@ -34,7 +80,7 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 20px 15px 80px 15px;
+  padding: 100px 15px 80px 15px;
 }
 
 .header #hello {
@@ -86,6 +132,7 @@ button {
   .menu-button {
     display: none;
   }
+
   .header-tab {
     display: flex;
     padding: 0 150px 0 150px;
@@ -94,51 +141,62 @@ button {
     background-color: #f7f7f7;
     width: 100%;
   }
+
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
+
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
+
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 60px;
   }
+
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
   }
+
   .desktop-menu h4:hover {
     color: #ec5242;
   }
+
   .header {
     padding: 100px 0 80px 200px;
     width: 80%;
   }
+
   .header #hello {
     font-size: 45px;
     margin: 0;
   }
+
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
   }
+
   .header p {
     font-size: 15px;
     padding: 20px;
     width: 70%;
   }
+
   .header #date {
     font-size: 35px;
     margin: 15px 0 0 0;
   }
+
   .header #location {
     font-size: 25px;
     margin: 0 0 30px 0;
@@ -154,6 +212,7 @@ button {
   align-items: center;
   background-image: url("../src/main-bg.png");
   background-repeat: repeat;
+  padding-top: 70px;
 }
 
 .events h2 {
@@ -228,13 +287,16 @@ button {
   .events {
     width: fit-content;
   }
+
   .events h3 {
     text-align: center;
   }
+
   .events p {
     text-align: center;
     width: 90%;
   }
+
   .events ul {
     flex-direction: row;
     justify-content: center;
@@ -242,6 +304,7 @@ button {
     gap: 5px;
     flex-wrap: wrap;
   }
+
   .events li {
     width: 13%;
     display: flex;
@@ -249,12 +312,15 @@ button {
     padding: 20px 0 20px 0;
     min-width: 190px;
   }
+
   .events img {
     width: 40%;
   }
+
   .events button {
     display: none;
   }
+
   .events a {
     display: block;
     color: #d3d3d3;
@@ -271,6 +337,7 @@ button {
   align-items: center;
   font-family: "Lato", sans-serif;
   margin: 0 20px 40px 20px;
+  padding-top: 70px;
 }
 
 .guests h2 {
@@ -364,13 +431,55 @@ button {
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
   }
+
   .guests li {
     min-width: 360px;
   }
+
   .guests button {
     width: 30%;
   }
+
   .guest-image {
     background-image: url(../src/chess.png);
   }
+}
+
+/* Sponsors section */
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  margin: 0 0 40px 0;
+  padding: 30px 10px 50px 10px;
+  background-color: #272a31;
+  width: 100%;
+  color: #8d8d8d;
+}
+
+.sponsors hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 30px;
+  margin: 10px 0 30px 0;
+}
+
+.sponsors ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-weight: 900;
+}
+
+/* Copyright section */
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+  gap: 30px;
 }
