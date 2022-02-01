@@ -310,6 +310,10 @@ button {
   border-radius: 4px;
 }
 
+.guests button > img {
+  width: 10px;
+}
+
 .guest-image {
   background-image: url(../src/chess.jpg);
   background-size: 40% 40%;

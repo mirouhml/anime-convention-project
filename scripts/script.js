@@ -83,11 +83,13 @@ button.addEventListener('click', () => {
     if (clicks){
         createGuestSection(list,list.length);
         clicks = false;
-        button.innerHTML = 'LESS';
+        button.innerHTML = `LESS
+                            <img src="src/up-arrow.png">`;
     }
     else {
         createGuestSection(list,2);
         clicks = true;
-        button.innerHTML = 'MORE';
+        button.innerHTML = `MORE
+                            <img src="src/down-arrow.png">`;
     }
 });
