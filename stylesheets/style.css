@@ -12,6 +12,8 @@
 body {
   width: fit-content;
   background-image: url("../src/background2.png");
+  background-repeat: repeat-x;
+  background-position: top;
 }
 
 button {
@@ -84,7 +86,6 @@ button {
   .menu-button {
     display: none;
   }
-
   .header-tab {
     display: flex;
     padding: 0 150px 0 150px;
@@ -93,62 +94,51 @@ button {
     background-color: #f7f7f7;
     width: 100%;
   }
-
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
-
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
-
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 60px;
   }
-
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
   }
-
   .desktop-menu h4:hover {
     color: #ec5242;
   }
-
   .header {
     padding: 100px 0 80px 200px;
     width: 80%;
   }
-
   .header #hello {
     font-size: 45px;
     margin: 0;
   }
-
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
   }
-
   .header p {
     font-size: 15px;
     padding: 20px;
     width: 70%;
   }
-
   .header #date {
     font-size: 35px;
     margin: 15px 0 0 0;
   }
-
   .header #location {
     font-size: 25px;
     margin: 0 0 30px 0;
@@ -162,6 +152,8 @@ button {
   background-color: #272a31;
   font-family: "Lato", sans-serif;
   align-items: center;
+  background-image: url("../src/main-bg.png");
+  background-repeat: repeat;
 }
 
 .events h2 {
@@ -170,7 +162,6 @@ button {
 }
 
 .events hr {
-  color: #ec5242;
   border: none;
   border-top: 1px solid #ec5242;
   width: 30px;
@@ -195,7 +186,7 @@ button {
 }
 
 .events li {
-  background-color: #3c3f46;
+  background-color: #5f5f5f50;
   width: 94%;
   display: grid;
   grid-template-columns: 10% 30% 50%;
@@ -207,6 +198,10 @@ button {
 
 .events li:hover {
   border-color: #d3d3d3;
+}
+
+.events img {
+  width: 120%;
 }
 
 .events button {
@@ -233,48 +228,33 @@ button {
   .events {
     width: fit-content;
   }
-
-  .events hr {
-    width: 30px;
-  }
-
   .events h3 {
     text-align: center;
   }
-
   .events p {
     text-align: center;
     width: 90%;
   }
-
   .events ul {
-    list-style-type: none;
-    width: 100%;
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     padding: 0 0 0 0;
     gap: 5px;
     flex-wrap: wrap;
   }
-
   .events li {
-    background-color: #3c3f46;
     width: 13%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding: 20px 0 20px 0;
-    border: 1px solid #3c3f46;
-    align-items: center;
     min-width: 190px;
   }
-
+  .events img {
+    width: 40%;
+  }
   .events button {
     display: none;
   }
-
   .events a {
     display: block;
     color: #d3d3d3;
@@ -282,4 +262,77 @@ button {
     margin: 40px 0 40px 0;
     text-transform: uppercase;
   }
+}
+
+/* Mobile version of the guests section */
+.guests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  margin: 0 20px 0 20px;
+}
+
+.guests h2 {
+  margin: 30px 0 0 0;
+  color: #272a31;
+}
+
+.guests hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 30px;
+  margin: 10px 0 30px 0;
+}
+
+.guests ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.guests li {
+  display: grid;
+  grid-template-columns: 35% 57%;
+  gap: 8%;
+}
+
+.guest-image {
+  background-image: url(../src/chess.jpg);
+  background-size: 40% 40%;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 0;
+}
+
+.guest-image img {
+  width: 100%;
+  height: 100%;
+  object-position: bottom;
+  padding-left: 12%;
+  padding-top: 12%;
+}
+
+.guest-info hr {
+  border: none;
+  border-top: 1px solid #d3d3d3;
+  width: 30px;
+  margin: 10px 0 10px 0;
+}
+
+.guest-info h3 {
+  font-weight: 900;
+}
+
+.guest-info h4 {
+  font-style: italic;
+  color: #ec5242;
+  font-size: 12px;
+}
+
+.guest-info p {
+  font-size: 12px;
 }
