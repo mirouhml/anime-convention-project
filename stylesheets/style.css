@@ -270,7 +270,7 @@ button {
   flex-direction: column;
   align-items: center;
   font-family: "Lato", sans-serif;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 40px 20px;
 }
 
 .guests h2 {
@@ -312,8 +312,13 @@ button {
   width: 100%;
   height: 100%;
   object-position: bottom;
+  object-fit: cover;
   padding-left: 12%;
   padding-top: 12%;
+}
+
+.guest-info {
+  padding-top: 8%;
 }
 
 .guest-info hr {
@@ -335,4 +340,20 @@ button {
 
 .guest-info p {
   font-size: 12px;
+}
+
+/* Desktop version of the guests section */
+@media only screen and (min-width: 768px) {
+  .guests ul {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+  }
+  .guests li {
+    min-width: 360px;
+  }
+  .guest-image {
+    background-image: url(../src/chess.png);
+  }
 }
