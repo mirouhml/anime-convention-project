@@ -14,6 +14,10 @@ body {
   background-image: url("../src/background2.png");
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Mobile version of the header. */
 .logo,
 .desktop-menu {
@@ -120,7 +124,8 @@ body {
   }
 
   .header {
-    padding: 100px 200px 80px 200px;
+    padding: 100px 0 80px 200px;
+    width: 80%;
   }
 
   .header #hello {
@@ -148,4 +153,82 @@ body {
     font-size: 25px;
     margin: 0 0 30px 0;
   }
+}
+
+/* Mobile version of the events section */
+.events {
+  display: flex;
+  flex-direction: column;
+  background-color: #272a31;
+  font-family: "Lato", sans-serif;
+  align-items: center;
+}
+
+.events h2 {
+  margin: 30px 0 0 0;
+  color: #d3d3d3;
+}
+
+.events hr {
+  color: #ec5242;
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 30px;
+  margin: 10px 0 30px 0;
+}
+
+.events h3 {
+  color: #ec5242;
+}
+
+.events p {
+  color: #d3d3d3;
+}
+
+.events ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.events li {
+  background-color: #3c3f46;
+  width: 94%;
+  display: grid;
+  grid-template-columns: 10% 30% 50%;
+  gap: 15px;
+  padding: 20px 0 20px 20px;
+  border: 1px solid #3c3f46;
+  align-items: center;
+}
+
+.events li:hover {
+  border-color: #d3d3d3;
+}
+
+.events button {
+  padding: 20px;
+  margin: 30px 0 30px 0;
+  background-color: #ec5242;
+  color: #f7f7f7;
+  border: 2px solid #ec5242;
+  transition: 300ms ease-in-out;
+}
+
+.events button:hover {
+  background-color: #f7f7f7;
+  color: #ec5242;
+}
+
+.events button:active {
+  background-color: #cc3b2b;
+  color: #f7f7f7;
+  border-color: #cc3b2b;
+}
+
+.events a {
+  display: none;
 }
