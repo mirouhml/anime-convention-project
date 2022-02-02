@@ -28,8 +28,6 @@ html {
 }
 
 body {
-  line-height: 1.4;
-  font-size: 16px;
   width: fit-content;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -141,7 +139,6 @@ a {
     background-color: $background2;
     padding: 20px;
     font-weight: 600;
-    max-width: 590px;
   }
 
   #date {
@@ -245,7 +242,7 @@ a {
 
     #hello {
       font-size: 45px;
-      margin: 10px 0 20px 0;
+      margin: 0;
     }
 
     h1 {
@@ -453,10 +450,6 @@ a {
   }
 }
 
-.guest-card {
-  font-size: 14px;
-}
-
 .guest-image {
   background-image: url(../src/chess.jpg);
   background-size: 40% 40%;
@@ -486,17 +479,16 @@ a {
 
   h3 {
     font-weight: 900;
-    font-size: 1.4em;
   }
 
   h4 {
     font-style: italic;
     color: $secondary-color;
-    font-size: 0.8em;
+    font-size: 12px;
   }
 
   p {
-    font-size: 1em;
+    font-size: 12px;
   }
 }
 
