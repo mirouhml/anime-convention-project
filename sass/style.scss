@@ -290,6 +290,7 @@ a {
 
   h3 {
     color: $secondary-color;
+    word-break: break-word;
   }
 
   p {
@@ -458,8 +459,6 @@ a {
     object-fit: cover;
     padding-left: 12%;
     padding-top: 12%;
-    min-width: 132px;
-    min-height: 132.61px;
   }
 }
 
@@ -509,6 +508,8 @@ a {
 
   .guest-image {
     background-image: url(../src/chess.png);
+    min-width: 132px;
+    min-height: 132.61px;
   }
 }
 
@@ -547,7 +548,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 30px 30px;
   font-family: $font-family2;
   font-size: 15px;
   gap: 30px;
