@@ -261,7 +261,7 @@ a {
   }
 }
 
-/* Logo section */
+/* Mobile version of the logo section */
 .website-logo {
   display: flex;
   flex-direction: column;
@@ -298,6 +298,16 @@ a {
     border: 2px solid $tertiary-color;
     padding: 20px;
     margin-bottom: 80px;
+    width: 90%;
+  }
+}
+
+/* Desktop version of the logo section */
+@media only screen and (min-width: 768px) {
+  .website-logo {
+    img {
+      width: 30%;
+    }
   }
 }
 
@@ -333,6 +343,7 @@ a {
   div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 80%;
     margin: 20px 0 60px 0;
@@ -343,7 +354,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 170px;
-    min-width: 300px;
+    min-width: 260px;
     color: $background2;
     text-align: center;
     display: flex;
@@ -359,7 +370,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 170px;
-    min-width: 300px;
+    min-width: 260px;
     color: $background2;
     text-align: center;
     display: flex;
@@ -436,9 +447,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   font-family: $font-family2;
   font-size: 15px;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px 30px;
   gap: 30px;
 
   img {
