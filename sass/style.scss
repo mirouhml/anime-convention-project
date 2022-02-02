@@ -29,9 +29,6 @@ html {
 
 body {
   width: fit-content;
-  background-image: $background-image2;
-  background-repeat: repeat-x;
-  background-position: top;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
@@ -219,7 +216,7 @@ a {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
   }
 
   .menu-last-item {
@@ -233,9 +230,15 @@ a {
     color: $secondary-color;
   }
 
+  .header-section {
+    width: 100%;
+    background-image: $background-image2;
+    background-size: cover;
+  }
+
   .header {
     padding: 100px 0 80px 200px;
-    width: 82%;
+    width: 84%;
 
     #hello {
       font-size: 45px;
@@ -401,8 +404,9 @@ a {
   flex-direction: column;
   align-items: center;
   font-family: $font-family2;
-  margin: 0 20px 40px 20px;
+  padding: 0 10px 40px 10px;
   padding-top: 70px;
+  width: 100%;
 
   h2 {
     margin: 30px 0 0 0;
@@ -428,7 +432,7 @@ a {
   li {
     display: grid;
     grid-template-columns: 35% 57%;
-    gap: 8%;
+    gap: 5%;
   }
 
   button {
@@ -499,7 +503,7 @@ a {
     }
 
     li {
-      min-width: 360px;
+      min-width: 352px;
     }
 
     button {

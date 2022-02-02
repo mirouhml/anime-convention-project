@@ -204,7 +204,7 @@ a {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
   }
 
   .desktop-menu h4:hover {
