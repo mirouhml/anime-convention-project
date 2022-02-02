@@ -52,6 +52,7 @@ const guests = {
 function createGuest(guest) {
   const guestContainer = document.getElementById('guest-container');
   const guestElement = document.createElement('li');
+  guestElement.classList.add('guest-card');
   guestElement.innerHTML = `<div class="guest-image">
                                     <img src="${guest.picture}" alt="Guest picture">
                                 </div>

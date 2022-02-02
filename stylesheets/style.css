@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  line-height: 1.4;
+  font-size: 16px;
   width: fit-content;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -125,6 +127,7 @@ a {
   background-color: #f7f7f7;
   padding: 20px;
   font-weight: 600;
+  max-width: 590px;
 }
 
 .header #date {
@@ -146,7 +149,6 @@ a {
   .menu-button {
     display: none;
   }
-
   .above-header {
     display: flex;
     justify-content: end;
@@ -159,20 +161,16 @@ a {
     font-size: 10px;
     font-weight: 400;
   }
-
   .above-header a:first-of-type > img {
     max-width: 8px;
   }
-
   .above-header a > img {
     max-width: 16px;
   }
-
   header {
     position: fixed;
     width: 100%;
   }
-
   .header-tab {
     display: flex;
     padding: 0 90px 0 90px;
@@ -180,73 +178,60 @@ a {
     background-color: #f7f7f7;
     width: 100%;
   }
-
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
-
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
-
   .logo img {
     max-width: 92px;
   }
-
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 24px;
   }
-
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
     color: #ec5242;
   }
-
   .desktop-menu h4:hover {
     color: #ec5242;
   }
-
   .header-section {
     width: 100%;
     background-image: url("../src/background2.png");
     background-size: cover;
   }
-
   .header {
     padding: 100px 0 80px 200px;
     width: 84%;
   }
-
   .header #hello {
     font-size: 45px;
-    margin: 0;
+    margin: 10px 0 20px 0;
   }
-
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
   }
-
   .header p {
     font-size: 15px;
     padding: 20px;
     width: 70%;
   }
-
   .header #date {
     font-size: 35px;
     margin: 15px 0 0 0;
   }
-
   .header #location {
     font-size: 25px;
     margin: 0 0 30px 0;
@@ -339,16 +324,13 @@ a {
   .events {
     width: fit-content;
   }
-
   .events h3 {
     text-align: center;
   }
-
   .events p {
     text-align: center;
     width: 90%;
   }
-
   .events ul {
     flex-direction: row;
     justify-content: center;
@@ -356,7 +338,6 @@ a {
     gap: 5px;
     flex-wrap: wrap;
   }
-
   .events li {
     width: 13%;
     display: flex;
@@ -365,15 +346,12 @@ a {
     min-width: 190px;
     min-height: 297px;
   }
-
   .events img {
     width: 40%;
   }
-
   .events button {
     display: none;
   }
-
   .events a {
     display: block;
     color: #d3d3d3;
@@ -435,6 +413,10 @@ a {
   width: 10px;
 }
 
+.guest-card {
+  font-size: 14px;
+}
+
 .guest-image {
   background-image: url(../src/chess.jpg);
   background-size: 40% 40%;
@@ -465,16 +447,17 @@ a {
 
 .guest-info h3 {
   font-weight: 900;
+  font-size: 1.4em;
 }
 
 .guest-info h4 {
   font-style: italic;
   color: #ec5242;
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 .guest-info p {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 /* Desktop version of the guests section */
@@ -485,15 +468,12 @@ a {
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
   }
-
   .guests li {
     min-width: 352px;
   }
-
   .guests button {
     width: 30%;
   }
-
   .guest-image {
     background-image: url(../src/chess.png);
     min-width: 132px;
