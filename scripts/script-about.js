@@ -21,5 +21,4 @@ const mediaQuery = window.matchMedia('(min-width: 768px)');
 
 mediaQuery.addEventListener('change', () => {
   document.querySelector('.mobile-menu').style.display = 'none';
-  document.body.style.zoom = '100%';
 });

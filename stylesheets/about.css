@@ -12,9 +12,6 @@
 
 body {
   width: fit-content;
-  background-image: url("../src/mobile-bg.png");
-  background-repeat: repeat-x;
-  background-position: top;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
@@ -122,12 +119,13 @@ a {
   font-family: "Lato", sans-serif;
   color: #565656;
   font-size: 15px;
-  border: 4px solid #fefefe;
-  background-color: #f7f7f7;
+  border: 2px solid #ededed;
+  background-color: #fff;
   padding: 20px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .header p {
@@ -136,13 +134,14 @@ a {
   font-size: 15px;
   text-align: center;
   font-weight: 600;
+  width: 70%;
 }
 
 .header a {
   text-align: center;
   font-family: "Lato", sans-serif;
   color: #565656;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 /* Desktop version of the header. */
@@ -220,6 +219,7 @@ a {
   }
 
   .header {
+    background-image: url(../src/about-bg.png);
     background-color: #f7f7f7;
   }
 
@@ -233,6 +233,12 @@ a {
     width: 60%;
   }
 
+  .header p:first-of-type {
+    font-size: 15px;
+    padding: 20px;
+    width: 55%;
+  }
+
   .header p {
     font-size: 15px;
     padding: 20px;
@@ -244,7 +250,7 @@ a {
 .website-logo {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
+  background-color: #fff;
   font-family: "Lato", sans-serif;
   align-items: center;
   padding-top: 70px;
@@ -254,6 +260,7 @@ a {
   margin: 30px 0 0 0;
   color: #272a31;
   text-align: center;
+  width: 70%;
 }
 
 .website-logo hr {
@@ -270,6 +277,7 @@ a {
   text-align: center;
   font-weight: 600;
   margin-bottom: 40px;
+  width: 70%;
 }
 
 .website-logo img {
@@ -282,7 +290,7 @@ a {
 .past-events {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
+  background-color: #fff;
   font-family: "Lato", sans-serif;
   align-items: center;
   padding-top: 70px;
@@ -292,6 +300,7 @@ a {
   margin: 30px 0 0 0;
   color: #272a31;
   text-align: center;
+  width: 70%;
 }
 
 .past-events hr {
@@ -304,9 +313,34 @@ a {
 .past-events p {
   margin: 0 40px 0 40px;
   text-align: center;
+  width: 70%;
 }
 
-.past-events a {
+.past-events div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 20px 0 60px 0;
+}
+
+.past-events div > a:first-of-type {
+  background-image: url("../src/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 170px;
+  min-width: 300px;
+  color: #f7f7f7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.past-events div > a {
   background-image: url("../src/past-event-1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -319,15 +353,28 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 0 40px 0;
   text-decoration: none;
 }
 
 /* Desktop version of the past events section */
 @media only screen and (min-width: 768px) {
-  .past-events a {
-    width: 60%;
-    min-height: 400px;
+  .past-events div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px 0 110px 0;
+    gap: 30px;
+  }
+
+  .past-events div > a:first-of-type {
+    min-height: 300px;
+    min-width: 500px;
+  }
+
+  .past-events div > a {
+    min-height: 300px;
+    min-width: 500px;
   }
 }
 
