@@ -26,7 +26,6 @@
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ammar-hamlaoui-514909189/)
 - Twitter: [@kuronomirou](https://twitter.com/kuronomirou)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
