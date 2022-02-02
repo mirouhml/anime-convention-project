@@ -149,6 +149,7 @@ a {
   .menu-button {
     display: none;
   }
+
   .above-header {
     display: flex;
     justify-content: end;
@@ -161,16 +162,20 @@ a {
     font-size: 10px;
     font-weight: 400;
   }
+
   .above-header a:first-of-type > img {
     max-width: 8px;
   }
+
   .above-header a > img {
     max-width: 16px;
   }
+
   header {
     position: fixed;
     width: 100%;
   }
+
   .header-tab {
     display: flex;
     padding: 0 90px 0 90px;
@@ -178,51 +183,62 @@ a {
     background-color: #f7f7f7;
     width: 100%;
   }
+
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
+
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
+
   .logo img {
     max-width: 92px;
   }
+
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 24px;
   }
+
   .desktop-menu h4:hover {
     color: #ec5242;
   }
+
   .menu-last-item {
     border: 3px solid #ec5242;
     padding: 10px;
     margin: 10px;
     color: #ec5242;
   }
+
   .header {
     background-image: url(../src/about-bg.png);
     background-color: #f7f7f7;
   }
+
   .header #hello {
     display: none;
   }
+
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
     width: 60%;
   }
+
   .header p:first-of-type {
     font-size: 15px;
     padding: 20px;
-    width: 38%;
+    width: 55%;
   }
+
   .header p {
     font-size: 15px;
     padding: 20px;
@@ -359,10 +375,12 @@ a {
     margin: 60px 0 110px 0;
     gap: 30px;
   }
+
   .past-events div > a:first-of-type {
     min-height: 300px;
     min-width: 500px;
   }
+
   .past-events div > a {
     min-height: 300px;
     min-width: 500px;
