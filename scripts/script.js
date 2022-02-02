@@ -38,7 +38,7 @@ const guests = {
   guest7: {
     name: 'Christopher Sabat',
     occupation: 'Voice actor',
-    description: 'One of the leading figures in the dubbing industry, worked on many hot series such as My Hero Academia as All might, and Dragonball as Vegeta.',
+    description: 'One of the leading figures in the dubbing industry, worked on many hit series such as My Hero Academia as All might, and Dragonball as Vegeta.',
     picture: 'src/christopher.png',
   },
   guest8: {
