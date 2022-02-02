@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime convention</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="//fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <link href="//fonts.cdnfonts.com/css/lato" rel="stylesheet">
+</head>
+<body class="app-wrap">
+    <header>
+        <nav class="above-header">
+            <a>
+                <img src="src/facebook.png" alt="Facebook icon">
+            </a>
+            <a>
+                <img src="src/twitter.png" alt="Twitter icon">
+            </a>
+            <a>
+                <h4>Logout</h4>
+            </a>
+            <a>
+                <h4>Mypage</h4>
+            </a>
+            <a>
+                <h4>English</h4>
+            </a>  
+        </nav>
+        <nav class="header-tab">
+            <a href="index.html" class="logo">
+                <img src="src/logo.png" alt="Website logo">
+            </a>
+            <div class="menu-button" >
+                <a id="onclick-open">
+                    <img src="src/menu-icon.svg" alt="Menu icon"/>
+                </a>
+            </div>
+            <ul class="desktop-menu">
+                <li>
+                    <a href="about.html">
+                        <h4>
+                            About
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#events-id">
+                        <h4>
+                            Events
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#guests-id">
+                        <h4>
+                            Guests
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sponsors-id">
+                        <h4>
+                            Sponsors
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <h4 class="menu-last-item">
+                            CAC Campaign
+                        </h4>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile-menu">
+                <li>
+                    <a id="onclick-close">
+                        <img id="close-button" src="src/close-icon.png" alt="Close button">
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" id="onclick-about">
+                        <h4>
+                            About
+                        </h4>
+                    </a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="#events-id" id="onclick-events">
+                        <h4>
+                            Events
+                        </h4>
+                    </a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="#guests-id" id="onclick-guests">
+                        <h4>
+                            Guests
+                        </h4>
+                    </a>
+                    <hr>
+                </li>
+                <li>
+                    <a href="#sponsors-id" id="onclick-sponsors">
+                        <h4 class="menu-last-item">
+                            Sponsors
+                        </h4>
+                    </a>
+                    <hr>
+                </li>  
+                <li>
+                    <a id="onclick-compaign">
+                        <h4>
+                            CAC Campaign
+                        </h4>
+                    </a>
+                    <hr>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="header-section" id="header-id">
+        <div class="header">
+            <h2 id="hello">"Hello! Otakus"</h2>
+            <h1>CREATIVE ANIME CONVENTION 2022</h1>
+            <p>Creative Anime Convetion 2022 is the gathering of everything anime and otaku culture, celebrating the many aspects of Japanese pop culture and its influence on the world,taking place in Algeria.</p>
+            <h2 id="date">2022.02.24(THU) ~ 26(SAT)</h2>
+            <h2 id="location">@Sahat Chouhada, Algeirs</h2>
+        </div>
+    </section>
+    <section class="events" id="events-id">
+        <h2>Events</h2>
+        <hr>
+        <ul>
+            <li>
+                <img src="src/workshop.png" alt="Workshop icon">
+                <h3>Workshops</h3>
+                <p>Create your own character and learn the ins of the industry from the best people in the business.</p>
+            </li>
+            <li>
+                <img src="src/lecture.png" alt="Conferences icon">
+                <h3>Conferences</h3>
+                <p>Listen to the biggest names in the anime world while they present their experience and give insight about the industry.</p>
+            </li>
+            <li>
+                <img src="src/stage.png" alt="Super stage icon">
+                <h3>Super stage</h3>
+                <p>Attend exclusive announcements, trailers for new and anticipated works displayed, and interviews with the staff of the previous works.</p>
+            </li>
+            <li>
+                <img src="src/ignite.png" alt="Music show icon">
+                <h3>Music show</h3>
+                <p>Attend a dream concert for the fans by various music icons from Japan.</p>
+            </li>
+            <li>
+                <img src="src/forum.png" alt="Screening icon">
+                <h3>Screening</h3>
+                <p>Witness exclusive screening of the newest and most anticipated show debuts and movies.</p>
+            </li>
+        </ul>
+        <button type="button">Join CAC 2022</button>
+        <a href="">More info about the events</a>
+    </section>
+    <section class="guests" id="guests-id">
+        <h2>Guests</h2>
+        <hr>
+        <ul id="guest-container"></ul>
+        <button type="button" id="more-button">
+            MORE
+            <img src="src/down-arrow.png" alt="Arrow">
+        </button>
+    </section>
+    <section class="sponsors" id="sponsors-id">
+        <h2>Sponsors</h2>
+        <hr>
+        <ul>
+            <li>Ministry of Culture and Arts of Algeria</li>
+            <li>Kadokawa</li>
+            <li>Kodansha</li>
+            <li>KLab</li>
+            <li>Bandai Namco</li>
+            <li>Viz Media</li>
+        </ul>
+    </section>
+    <footer class="copyright">
+        <img src="src/logo.png" alt="Website logo">
+        <p>© 2022 CAC All Rights Reserved.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
