@@ -72,14 +72,35 @@ function createGuestSection(guestsList, counter) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  createGuestSection(Object.values(guests), 2);
-});
+
+
 
 let clicks = true;
 const button = document.getElementById('more-button');
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+const list = Object.values(guests);
+
+function mediaQueryCheck(){
+    if (mediaQuery.matches) {
+        createGuestSection(list, list.length);
+        button.style.display = 'none';
+    }
+    else {
+        createGuestSection(list, 2);
+        button.style.display = 'block';
+    }
+}
+
+mediaQuery.addEventListener("change", () => {
+    mediaQueryCheck();
+    document.querySelector('.mobile-menu').style.display = 'none';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    mediaQueryCheck();
+});
+
 button.addEventListener('click', () => {
-  const list = Object.values(guests);
   if (clicks) {
     createGuestSection(list, list.length);
     clicks = false;
@@ -110,5 +131,5 @@ function addevent(id) {
     openCloseMenu();
   });
 }
-const ids = ['onclick-open', 'onclick-close', 'onclick-events', 'onclick-about', 'onclick-guests', 'onclick-sponsors'];
+const ids = ['onclick-open', 'onclick-close', 'onclick-events', 'onclick-about', 'onclick-guests', 'onclick-sponsors','onclick-compaign'];
 ids.forEach(addevent);

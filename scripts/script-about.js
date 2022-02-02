@@ -14,5 +14,12 @@ function addevent(id) {
     openCloseMenu();
   });
 }
-const ids = ['onclick-open', 'onclick-close', 'onclick-logo', 'onclick-past-events', 'onclick-sponsors'];
+const ids = ['onclick-open', 'onclick-close', 'onclick-logo', 'onclick-past-events', 'onclick-sponsors','onclick-compaign'];
 ids.forEach(addevent);
+
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+mediaQuery.addEventListener("change", () => {
+    document.querySelector('.mobile-menu').style.display = 'none';
+    document.body.style.zoom = "100%"; 
+});

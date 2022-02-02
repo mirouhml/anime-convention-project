@@ -15,6 +15,11 @@ body {
   background-image: url("../src/mobile-bg.png");
   background-repeat: repeat-x;
   background-position: top;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 button {
@@ -141,58 +146,53 @@ a {
   .menu-button {
     display: none;
   }
-
   .header-tab {
     display: flex;
-    padding: 0 150px 0 150px;
+    padding: 0 100px 0 100px;
     box-shadow: 0 3px 10px 0 #4b4b4b73;
     position: fixed;
     background-color: #f7f7f7;
     width: 100%;
   }
-
   .header-tab a {
     text-decoration: none;
     color: #565656;
     font-family: "Lato", sans-serif;
   }
-
   .logo {
     display: block;
     flex-grow: 1;
     align-self: center;
   }
-
   .logo img {
     max-width: 92px;
   }
-
   .desktop-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 60px;
-    padding: 24px 0 24px 0;
+    gap: 30px;
   }
-
   .desktop-menu h4:hover {
     color: #ec5242;
   }
-
+  .menu-last-item {
+    border: 3px solid #ec5242;
+    padding: 10px;
+    margin: 10px;
+    color: #ec5242;
+  }
   .header {
     background-color: #f7f7f7;
   }
-
   .header #hello {
     display: none;
   }
-
   .header h1 {
     font-size: 60px;
     margin: 0 0 15px 0;
     width: 60%;
   }
-
   .header p {
     font-size: 15px;
     padding: 20px;
