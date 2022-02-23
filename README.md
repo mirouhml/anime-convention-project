@@ -2,7 +2,9 @@
 
 # Portfolio
 
-> This is a website about an event called Creative Anime Convention contains: events, guests and sponsors.
+This is a website about an event called Creative Anime Convention contains: events, guests and sponsors.
+
+It contains two pages, Home and About, it's adaptive to almost all devices even 320px devices.
 
 ![screenshot](./src/screenshot.png)
 
@@ -14,6 +16,7 @@
 
 - HTML
 - CSS
+- SCSS
 - Javascript
 - VSCode
 - Linters
