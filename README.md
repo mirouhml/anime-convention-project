@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio
+# Creative Anime Convention
 
 This is a website about an event called Creative Anime Convention contains: events, guests and sponsors.
 
